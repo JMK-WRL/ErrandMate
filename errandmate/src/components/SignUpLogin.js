@@ -1,7 +1,6 @@
-// src/components/SignUpLogin.js
 import React, { useState } from 'react';
 import { auth } from '../firebase';
-import { Button, TextField, Container } from '@material-ui/core';
+import { Button, TextField, Container } from '@mui/material'; // Updated import
 
 const SignUpLogin = () => {
   const [email, setEmail] = useState('');
@@ -34,4 +33,3 @@ const SignUpLogin = () => {
 };
 
 export default SignUpLogin;
-

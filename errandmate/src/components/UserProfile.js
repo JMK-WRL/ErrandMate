@@ -1,7 +1,6 @@
-// src/components/UserProfile.js
 import React, { useState, useEffect } from 'react';
 import { auth, firestore } from '../firebase';
-import { Button, TextField, Container, Avatar } from '@material-ui/core';
+import { Button, TextField, Container, Avatar } from '@mui/material'; // Updated import
 
 const UserProfile = () => {
   const [user, setUser] = useState(null);
