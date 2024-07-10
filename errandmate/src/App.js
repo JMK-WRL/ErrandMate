@@ -1,19 +1,27 @@
+// src/App.js
 import React from 'react';
-import { Routes, Route } from 'react-router-dom'; // Updated import
+import { Route, Routes } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Home from './pages/Home';
+import Signup from './pages/Signup';
+import ErrandForm from './components/ErrandForm';
+import Profile from './pages/Profile';
+import Dashboard from './pages/Dashboard';
+import './App.css'
 
-import SignUpLogin from './components/SignUpLogin';
-import UserProfile from './components/UserProfile';
-
-const App = () => {
+function App() {
   return (
     <div>
-      <Routes> {/* Changed from Switch to Routes */}
-        <Route path="/signup-login" element={<SignUpLogin />} /> {/* Changed component to element */}
-        <Route path="/user-profile" element={<UserProfile />} /> {/* Changed component to element */}
-        {/* Add more routes as needed */}
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/post-errand" element={<ErrandForm />} />
+        <Route path="/profile" element={<Profile />} />
       </Routes>
     </div>
   );
-};
+}
 
 export default App;
