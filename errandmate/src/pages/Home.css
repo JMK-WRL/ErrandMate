@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+::selection {
+    color: #fff;
+    background: #FFA500;
+    /* Accent color for selection */
+}
+
+.home-container {
+    padding: 0 16px;
+}
+
+.hero-section {
+    text-align: center;
+    margin-top: 64px;
+    background-image: url('../images/Simplify-Grocery-Shopping-_-Live-Better_.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 64px;
+    border-radius: 8px;
+    color: #fff;
+    background-color: #124E66;
+    /* Primary color background */
+}
+
+.hero-title {
+    font-weight: bold;
+}
+
+.hero-subtitle {
+    margin-top: 16px;
+    margin-bottom: 32px;
+}
+
+.hero-button {
+    margin: 8px;
+    background-color: #1F7891;
+    /* Secondary color for button */
+    color: #fff;
+    /* Text color for button */
+}
+
+.hero-button:hover {
+    background-color: #FFA500;
+    /* Accent color on button hover */
+}
+
+.section {
+    margin-top: 64px;
+}
+
+.section-title {
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.feature-item {
+    padding: 32px;
+    text-align: center;
+    background-color: #F0F4F8;
+    /* Background color for feature items */
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.feature-item:hover {
+    background-color: #e0e0e0;
+}
+
+.testimonial-section {
+    background-color: #F0F4F8;
+    /* Background color for testimonial section */
+    padding: 64px;
+    margin-top: 64px;
+}
+
+.testimonial {
+    text-align: center;
+    font-style: italic;
+    margin-top: 16px;
+}
+
+.footer {
+    background-color: #124E66;
+    /* Primary color background for footer */
+    color: #fff;
+    padding: 48px;
+    margin-top: 64px;
+    text-align: center;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #FFA500;
+    /* Accent color on link hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 32px;
+    }
+
+    .hero-title,
+    .hero-subtitle {
+        font-size: 1.5rem;
+    }
+
+    .hero-button {
+        font-size: 1rem;
+    }
+
+    .feature-item {
+        padding: 16px;
+    }
+
+    .testimonial-section {
+        padding: 32px;
+    }
+
+    .footer {
+        padding: 24px;
+    }
+}
